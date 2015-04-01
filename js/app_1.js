@@ -14,7 +14,7 @@ map.setView([39, -96], 4);
 
 var dataFileToAdd = 'data/avery_test.geojson';
 
-var featureLayer = L.mapbox.featureLayer().loadURL(dataFileToAdd).addTo(map)
+var featureLayer = L.mapbox.featureLayer().loadURL(dataFileToAdd).addTo(map);
 
 featureLayer.on('ready',function(){
   this.setStyle({
